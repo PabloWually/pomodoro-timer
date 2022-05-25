@@ -1,0 +1,15 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "Page for a timer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "timer",
+    "javascript"
+  ],
+  "author": "Pablo Guallichico",
+  "license": "MIT"
+}
