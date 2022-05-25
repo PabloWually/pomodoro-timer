@@ -31,15 +31,19 @@
         <section class="hero" id="principal">
             <h1 class="hero--title">Chronometer</h1>
             <div class="hero--time">
-                <p id="time"><span id="minutes">00</span>:<span id="seconds">00</span></p>
+                <p id="time"><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="miliseconds">00</span></p>
             </div>
             <div class="hero--buttons">
-                <button class="button hero--button" type="button">start</button>
-                <button class="button hero--button" type="button">Stop</button>
+                <button class="button hero--button" type="button" onclick="startChronometer()">Start</button>
+                <button class="button hero--button" type="button" onclick="stopChronometer()">Stop</button>
+                <button class="button hero--button" type="button" onclick="resetChronometer()">Reset</button>
+                <button class="button hero--button" type="button" onclick="lapChronometer()">Lap</button>
             </div>
         </section>
-        <script src="./src/index.js"></script>
     </main>
+    <div class="lap" id="clock-lap">
+                
+    </div>
     <script src="./src/index.js"></script>
 </body>
 </html>

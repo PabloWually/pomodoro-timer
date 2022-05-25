@@ -45,10 +45,15 @@ header{
 }
 
 main{
-    width: 100%;
+    /* width: 100%;
     position: absolute;
     top: 50%;
-    transform: translateY(25%);
+    transform: translateY(25%); */
+    width: 100%;
+    position: absolute;
+    display: grid;
+    height: 100vh;
+    align-items: center;
 }
 
 .hero{
@@ -62,4 +67,9 @@ main{
 
 .hero--time{
     font-size: 2rem;
+}
+
+.lap{
+    position: relative;
+    margin: 0 auto;
 }
