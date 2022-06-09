@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d585dff03a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="header--nav">
+            <ul class="header--list">
+                <li>
+                    <button class="button header--button" id="chronomether-button" title="Chronometer"><i class="fa-solid fa-clock"></i></button>
+                </li>
+                <li>
+                    <button class="button header--button" id="timer-button" title="Timer" onclick="executeTimer()"><i class="fa-solid fa-hourglass"></i></button>
+                </li>
+                <li>
+                    <button class="button header--button" title="Alarms"><i class="fa-solid fa-bell"></i></button>
+                </li>
+            </ul>  
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="principal">
+            <h1 class="hero--title">Chronometer</h1>
+            <div class="hero--time">
+                <p id="time"><span id="minutes">00</span>:<span id="seconds">00</span>:<span id="miliseconds">00</span></p>
+            </div>
+            <div class="hero--buttons">
+                <button class="button hero--button" type="button" onclick="startChronometer()">Start</button>
+                <button class="button hero--button" type="button" onclick="stopChronometer()">Stop</button>
+                <button class="button hero--button" type="button" onclick="resetChronometer()">Reset</button>
+                <button class="button hero--button" type="button" onclick="lapChronometer()">Lap</button>
+            </div>
+        </section>
+    </main>
+    <div class="lap" id="clock-lap">
+                
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+</html>
