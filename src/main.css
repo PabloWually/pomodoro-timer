@@ -19,7 +19,7 @@ body{
 }
 
 header{
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     width: 100%;
 }
@@ -52,7 +52,7 @@ main{
     width: 100%;
     position: absolute;
     display: grid;
-    height: 100vh;
+    height: 500px;
     align-items: center;
 }
 
@@ -72,4 +72,8 @@ main{
 .lap{
     position: relative;
     margin: 0 auto;
+}
+
+.button:hover{
+    cursor: pointer;
 }
